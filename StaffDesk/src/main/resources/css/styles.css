@@ -1,0 +1,311 @@
+/* NorthPeak HRMS - corporate theme (navy, white, light gray) */
+
+.root {
+    -navy-950: #0A1430;
+    -navy-900: #0F1F3D;
+    -navy-800: #16294D;
+    -navy-700: #1B3360;
+    -blue: #2D5AA8;
+    -blue-600: #244C92;
+    -sky: #5B8DD6;
+    -gray-50: #F3F5F9;
+    -gray-100: #E8ECF3;
+    -gray-200: #DCE2EC;
+    -gray-300: #C6CFDD;
+    -gray-500: #8794AB;
+    -ink: #18223A;
+    -muted: #5D6A82;
+    -on-navy: #DCE5F5;
+    -on-navy-dim: #8FA1C2;
+    -ok: #1E8556;
+    -ok-bg: #E3F3EA;
+    -warn: #A86B0F;
+    -warn-bg: #FBF0DA;
+    -bad: #B8392E;
+    -bad-bg: #FBE6E3;
+    -info: #2D5AA8;
+    -info-bg: #E5EDFA;
+    -idle: #6B7487;
+    -idle-bg: #ECEEF2;
+
+    -fx-font-family: "Segoe UI", "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 13.5px;
+    -fx-text-fill: -ink;
+    -fx-base: #F3F5F9;
+    -fx-accent: -blue;
+    -fx-focus-color: -blue;
+    -fx-faint-focus-color: rgba(45, 90, 168, 0.15);
+    -fx-background-color: -gray-50;
+}
+
+/* ---------------------------------------------------------------- icons */
+.icon {
+    -fx-fill: transparent;
+    -fx-stroke: -muted;
+    -fx-stroke-width: 1.8;
+    -fx-stroke-line-cap: round;
+    -fx-stroke-line-join: round;
+}
+.icon-white { -fx-stroke: white; }
+.icon-muted { -fx-stroke: -muted; }
+.icon-ok { -fx-stroke: -ok; }
+.icon-bad { -fx-stroke: -bad; }
+.icon-navy { -fx-stroke: -navy-700; }
+.icon-green { -fx-stroke: -ok; }
+.icon-amber { -fx-stroke: -warn; }
+.icon-blue { -fx-stroke: -blue; }
+.logo-mark { -fx-fill: white; -fx-stroke: white; -fx-stroke-width: 0.5; }
+.toast-icon { -fx-stroke: #7FD3A7; -fx-stroke-width: 2.2; }
+
+/* ---------------------------------------------------------------- menu & status bar */
+.menu-row {
+    -fx-background-color: -gray-100;
+    -fx-border-color: transparent transparent -gray-300 transparent;
+    -fx-padding: 0 12 0 4;
+}
+.app-menu { -fx-background-color: transparent; -fx-padding: 2 0 2 0; }
+.app-menu .label { -fx-text-fill: -ink; }
+.menu-user { -fx-text-fill: -muted; -fx-font-size: 12.5px; }
+
+.statusbar {
+    -fx-background-color: -gray-100;
+    -fx-border-color: -gray-300 transparent transparent transparent;
+    -fx-padding: 5 12 5 12;
+}
+.statusbar .label { -fx-text-fill: -muted; -fx-font-size: 12px; }
+.status-dot { -fx-fill: -ok; }
+.status-right { -fx-font-family: "Consolas", "IBM Plex Mono", monospace; -fx-font-size: 11.5px; }
+
+/* ---------------------------------------------------------------- sidebar */
+.sidebar {
+    -fx-background-color: -navy-900;
+    -fx-padding: 16 12 14 12;
+    -fx-spacing: 4;
+}
+.brand {
+    -fx-padding: 2 8 16 8;
+    -fx-border-color: transparent transparent -navy-700 transparent;
+}
+.logo-tile {
+    -fx-background-color: -blue;
+    -fx-background-radius: 7;
+    -fx-min-width: 32; -fx-min-height: 32; -fx-pref-width: 32; -fx-pref-height: 32; -fx-max-width: 32; -fx-max-height: 32;
+}
+.brand-name { -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; }
+.brand-sub { -fx-text-fill: -on-navy-dim; -fx-font-size: 10.5px; }
+.nav-label { -fx-text-fill: -on-navy-dim; -fx-font-size: 10.5px; -fx-padding: 14 10 6 10; }
+
+.sidebar .nav-item {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 6;
+    -fx-padding: 9 10 9 10;
+    -fx-cursor: hand;
+}
+.sidebar .nav-item .nav-text { -fx-text-fill: -on-navy; -fx-font-size: 14px; }
+.sidebar .nav-item .nav-icon { -fx-stroke: -on-navy-dim; }
+.sidebar .nav-item:hover { -fx-background-color: -navy-800; }
+.sidebar .nav-item.active { -fx-background-color: -blue; }
+.sidebar .nav-item.active .nav-text { -fx-text-fill: white; -fx-font-weight: bold; }
+.sidebar .nav-item.active .nav-icon { -fx-stroke: white; }
+.sidebar .nav-item:focused { -fx-background-insets: 0; }
+.nav-badge {
+    -fx-background-color: -warn-bg;
+    -fx-text-fill: -warn;
+    -fx-font-size: 11.5px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 1 7 1 7;
+}
+
+.admin { -fx-padding: 12 8 2 8; -fx-border-color: -navy-700 transparent transparent transparent; }
+.admin-avatar {
+    -fx-background-color: -sky; -fx-background-radius: 14;
+    -fx-text-fill: -navy-950; -fx-font-weight: bold; -fx-font-size: 11px;
+    -fx-min-width: 28; -fx-min-height: 28; -fx-alignment: center;
+}
+.admin-name { -fx-text-fill: white; -fx-font-size: 13px; }
+.admin-role { -fx-text-fill: -on-navy-dim; -fx-font-size: 11.5px; }
+
+/* ---------------------------------------------------------------- page */
+.content, .page { -fx-background-color: -gray-50; }
+.page-scroll, .page-scroll > .viewport { -fx-background-color: -gray-50; -fx-background-insets: 0; -fx-padding: 0; }
+.crumb { -fx-text-fill: -muted; -fx-font-size: 12px; }
+.page-title { -fx-text-fill: -navy-900; -fx-font-size: 23px; -fx-font-weight: bold; }
+.muted { -fx-text-fill: -muted; }
+.muted-small { -fx-text-fill: -muted; -fx-font-size: 12px; }
+.value { -fx-text-fill: -ink; -fx-font-weight: bold; }
+.value-mono { -fx-text-fill: -ink; -fx-font-family: "Consolas", "IBM Plex Mono", monospace; }
+
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: -gray-200;
+    -fx-border-radius: 8;
+    -fx-padding: 14 16 14 16;
+}
+.card-title { -fx-text-fill: -navy-900; -fx-font-size: 14px; -fx-font-weight: bold; }
+.table-card { -fx-padding: 0; }
+.toolbar { -fx-padding: 10 14 10 14; }
+
+.kpi { -fx-padding: 14 16 14 16; }
+.kpi-label { -fx-text-fill: -muted; -fx-font-size: 12.5px; }
+.kpi-value { -fx-text-fill: -navy-900; -fx-font-size: 32px; -fx-font-weight: bold; }
+.kpi-icon { -fx-background-radius: 8; -fx-min-width: 38; -fx-min-height: 38; -fx-max-width: 38; -fx-max-height: 38; }
+.kpi-icon-navy, .kpi-icon-blue { -fx-background-color: -info-bg; }
+.kpi-icon-green { -fx-background-color: -ok-bg; }
+.kpi-icon-amber { -fx-background-color: -warn-bg; }
+
+/* ---------------------------------------------------------------- buttons */
+.button {
+    -fx-background-color: white;
+    -fx-border-color: -gray-300;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-text-fill: -ink;
+    -fx-padding: 7 14 7 14;
+    -fx-cursor: hand;
+}
+.button:hover { -fx-background-color: -gray-50; -fx-border-color: -gray-500; }
+.button:focused { -fx-border-color: -blue; }
+.btn-primary { -fx-background-color: -blue; -fx-border-color: -blue-600; -fx-text-fill: white; }
+.btn-primary:hover { -fx-background-color: -blue-600; -fx-border-color: -blue-600; }
+.btn-success { -fx-background-color: -ok; -fx-border-color: -ok; -fx-text-fill: white; }
+.btn-danger { -fx-background-color: -bad; -fx-border-color: -bad; -fx-text-fill: white; }
+.btn-small { -fx-padding: 4 9 4 8; -fx-font-size: 12.5px; }
+.btn-ok-outline { -fx-text-fill: -ok; -fx-border-color: #9FD0B6; }
+.btn-ok-outline:hover { -fx-background-color: -ok-bg; }
+.btn-bad-outline { -fx-text-fill: -bad; -fx-border-color: #E7AFA9; }
+.btn-bad-outline:hover { -fx-background-color: -bad-bg; }
+.icon-btn { -fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 5; }
+.icon-btn:hover { -fx-background-color: -gray-100; -fx-border-color: -gray-300; }
+.icon-btn-danger:hover { -fx-background-color: -bad-bg; -fx-border-color: #E7AFA9; }
+.icon-btn-danger:hover .icon { -fx-stroke: -bad; }
+
+/* segmented control */
+.segmented { -fx-background-color: white; -fx-border-color: -gray-300; -fx-border-radius: 6; -fx-background-radius: 6; }
+.seg-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent -gray-200 transparent transparent;
+    -fx-text-fill: -muted;
+    -fx-padding: 7 14 7 14;
+    -fx-cursor: hand;
+    -fx-graphic-text-gap: 7;
+}
+.seg-button:hover { -fx-background-color: -gray-50; -fx-text-fill: -ink; }
+.seg-button:selected { -fx-background-color: -navy-900; -fx-text-fill: white; }
+.seg-count {
+    -fx-background-color: -gray-100; -fx-background-radius: 8; -fx-padding: 0 6 0 6;
+    -fx-font-size: 11.5px; -fx-font-weight: bold; -fx-text-fill: -ink;
+}
+.seg-button:selected .seg-count { -fx-background-color: -navy-700; -fx-text-fill: white; }
+
+/* inputs */
+.text-field, .text-area, .combo-box, .date-picker {
+    -fx-background-color: white;
+    -fx-border-color: -gray-300;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+.text-field:focused, .text-area:focused, .combo-box:focused, .date-picker:focused { -fx-border-color: -blue; }
+.text-area .content { -fx-background-color: white; }
+.search-field {
+    -fx-background-color: white; -fx-border-color: -gray-300; -fx-border-radius: 5; -fx-background-radius: 5;
+    -fx-padding: 0 0 0 10;
+}
+.search-field .text-field { -fx-border-color: transparent; -fx-background-color: transparent; }
+.field-label { -fx-text-fill: -muted; -fx-font-size: 12.5px; }
+.form-error { -fx-text-fill: -bad; -fx-font-size: 12.5px; }
+.info-line { -fx-background-color: -info-bg; -fx-text-fill: -navy-700; -fx-background-radius: 5; -fx-padding: 8 10 8 10; -fx-font-size: 12.5px; }
+
+/* ---------------------------------------------------------------- pills, tags, avatars */
+.pill { -fx-background-radius: 999; -fx-padding: 2 9 2 8; -fx-font-size: 12px; -fx-graphic-text-gap: 6; }
+.pill-ok { -fx-background-color: -ok-bg; -fx-text-fill: -ok; }
+.pill-ok .pill-dot { -fx-fill: -ok; }
+.pill-warn { -fx-background-color: -warn-bg; -fx-text-fill: -warn; }
+.pill-warn .pill-dot { -fx-fill: -warn; }
+.pill-bad { -fx-background-color: -bad-bg; -fx-text-fill: -bad; }
+.pill-bad .pill-dot { -fx-fill: -bad; }
+.pill-info { -fx-background-color: -info-bg; -fx-text-fill: -info; }
+.pill-info .pill-dot { -fx-fill: -info; }
+.pill-idle { -fx-background-color: -idle-bg; -fx-text-fill: -idle; }
+.pill-idle .pill-dot { -fx-fill: -idle; }
+.tag { -fx-background-color: -gray-100; -fx-text-fill: -navy-700; -fx-background-radius: 4; -fx-padding: 2 8 2 8; -fx-font-size: 12px; }
+.avatar-text { -fx-text-fill: white; -fx-font-weight: bold; }
+.person-name { -fx-text-fill: -navy-900; }
+
+/* ---------------------------------------------------------------- tables */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+    -fx-table-cell-border-color: -gray-100;
+}
+.table-view .column-header-background { -fx-background-color: -gray-100; -fx-background-radius: 8 8 0 0; }
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent -gray-300 transparent;
+    -fx-size: 36;
+}
+.table-view .column-header .label { -fx-text-fill: -muted; -fx-font-size: 11.5px; -fx-font-weight: bold; -fx-alignment: center-left; -fx-padding: 0 0 0 4; }
+.table-row-cell { -fx-background-color: white; -fx-border-color: transparent transparent -gray-100 transparent; }
+.table-row-cell:hover { -fx-background-color: #F6F8FC; }
+.table-row-cell:selected { -fx-background-color: -info-bg; }
+.table-row-cell:selected .table-cell { -fx-text-fill: -ink; }
+.table-cell { -fx-alignment: center-left; -fx-padding: 0 12 0 12; -fx-text-fill: -ink; }
+.mono-col.table-cell, .table-column.mono-col .table-cell { -fx-font-family: "Consolas", "IBM Plex Mono", monospace; -fx-font-size: 12.5px; }
+.table-view .num-col.table-cell { -fx-alignment: center-right; }
+.table-view .table-column.num-col { -fx-alignment: center-right; }
+.table-view:focused { -fx-background-insets: 0; }
+.table-view .placeholder .label { -fx-text-fill: -muted; }
+
+/* tree */
+.dept-tree { -fx-background-color: white; -fx-background-radius: 8; -fx-padding: 8 4 8 4; }
+.dept-tree .tree-cell { -fx-background-color: white; -fx-padding: 6 8 6 6; -fx-text-fill: -ink; }
+.dept-tree .tree-cell:hover { -fx-background-color: -gray-50; }
+.dept-tree .tree-cell:selected { -fx-background-color: -info-bg; -fx-text-fill: -navy-900; -fx-font-weight: bold; }
+
+/* ---------------------------------------------------------------- charts */
+.chart { -fx-padding: 4 4 0 0; }
+.chart-plot-background { -fx-background-color: transparent; }
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines { -fx-stroke: -gray-200; }
+.chart-alternative-row-fill, .chart-alternative-column-fill { -fx-fill: transparent; }
+.chart-vertical-zero-line, .chart-horizontal-zero-line { -fx-stroke: -gray-300; }
+.axis { -fx-tick-label-fill: -muted; -fx-tick-label-font-size: 11.5px; }
+.axis-label { -fx-text-fill: -muted; -fx-font-size: 11.5px; }
+.axis-tick-mark, .axis-minor-tick-mark { -fx-stroke: transparent; }
+.chart-bar { -fx-background-radius: 3 3 0 0; }
+.donut-hole { -fx-fill: white; }
+.donut-value { -fx-text-fill: -navy-900; -fx-font-size: 26px; -fx-font-weight: bold; }
+.swatch { -fx-min-width: 10; -fx-min-height: 10; -fx-max-width: 10; -fx-max-height: 10; -fx-background-radius: 2; }
+.legend-value { -fx-text-fill: -navy-900; -fx-font-weight: bold; }
+.stack-bar { -fx-background-color: -gray-100; -fx-background-radius: 7; -fx-min-height: 14; -fx-pref-height: 14; -fx-max-height: 14; }
+
+/* ---------------------------------------------------------------- detail */
+.profile { -fx-padding: 18 20 18 20; }
+.profile-name { -fx-text-fill: -navy-900; -fx-font-size: 21px; -fx-font-weight: bold; }
+.balance-value { -fx-text-fill: -navy-900; -fx-font-size: 40px; -fx-font-weight: bold; }
+.balance-bar { -fx-background-color: -gray-100; -fx-background-radius: 5; -fx-min-height: 10; -fx-pref-height: 10; -fx-max-height: 10; }
+.bar-used { -fx-background-color: -navy-700; }
+.bar-pending { -fx-background-color: #D9A441; }
+.figure-value { -fx-text-fill: -navy-900; -fx-font-size: 17px; -fx-font-weight: bold; }
+.summary { -fx-background-color: -gray-50; -fx-border-color: -gray-200; -fx-border-radius: 6; -fx-background-radius: 6; }
+
+/* ---------------------------------------------------------------- toast */
+.toast {
+    -fx-background-color: -navy-900;
+    -fx-text-fill: white;
+    -fx-background-radius: 7;
+    -fx-padding: 11 16 11 14;
+    -fx-effect: dropshadow(gaussian, rgba(10, 20, 48, 0.3), 18, 0, 0, 6);
+}
+
+/* ---------------------------------------------------------------- dialogs */
+.app-dialog { -fx-background-color: white; }
+.app-dialog > .header-panel { -fx-background-color: -navy-900; -fx-padding: 12 16 12 16; }
+.app-dialog > .header-panel .label { -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; }
+.app-dialog > .content { -fx-padding: 18 20 12 20; }
+.app-dialog > .button-bar > .container { -fx-background-color: -gray-50; -fx-padding: 12 20 12 20; }
+.app-dialog .graphic-container { -fx-padding: 0; }
